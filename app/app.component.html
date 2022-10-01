@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+  <div class="tip-modal">
+    <div class="row mt3">
+      <div class="mt3 mx-auto">
+        <div class="tip-amount text-center">
+          <input type="number" formControlName="input_tip" (change)="changeInputTip($event.target.value)" />
+        </div>
+      </div>
+    </div>
+    <div class="slider-wrapper">
+      <input type="range" id="slider" class="slider" #slider formControlName="tip" />
+      <div class="circle1" id="circle1" #circle1></div>
+      <div class="circle2" id="circle2" #circle2></div>
+      <div class="circle3" id="circle3" #circle3></div>
+      <div class="circle4" id="circle4" #circle4></div>
+      <div class="circle5" id="circle5" #circle5></div>
+    </div>
+  </div>
+</form>

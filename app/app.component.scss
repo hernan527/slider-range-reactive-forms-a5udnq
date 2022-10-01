@@ -1,0 +1,110 @@
+.tip-modal {
+  padding: 3rem 5rem;
+
+  .title {
+    font-size: 2.6rem;
+    font-weight: bold;
+  }
+
+  .balance,
+  .balance-value {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .balance {
+    color: #959494;
+    margin-right: 0.8rem;
+  }
+
+  .balance-value {
+    color: #656565;
+  }
+
+  .treasure-img {
+    width: 17rem;
+  }
+
+  .tip-amount {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #f4a91c;
+  }
+
+  .info {
+    color: #959494;
+    margin-top: 2rem;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    margin: 4rem auto 0 auto;
+    width: 80%;
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4,
+    .circle5 {
+      position: absolute;
+      top: 0;
+      width: 0.8rem;
+      height: 0.8rem;
+      background: #cbcbcb;
+      border-radius: 50%;
+      transform: translate(-100%, -25%);
+    }
+
+    .circle1 {
+      left: 21%;
+    }
+
+    .circle2 {
+      left: 40%;
+    }
+
+    .circle3 {
+      left: 60%;
+    }
+
+    .circle4 {
+      left: 80%;
+    }
+
+    .circle5 {
+      left: 100%;
+    }
+  }
+
+  .slider {
+    display: block;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.4rem;
+    border-radius: 1rem;
+    width: 100%;
+    background: linear-gradient(to right, green 0%, green 20%, #eeeeee 20%, #eeeeee 100%);
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+      position: relative;
+      -webkit-appearance: none;
+      appearance: none;
+      width: 2.3rem;
+      height: 2.3rem;
+      border-radius: 50%;
+      background: white;
+      border: 0.7rem solid green;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    &::-ms-fill-lower {
+      background: green;
+    }
+  }
+
+}
